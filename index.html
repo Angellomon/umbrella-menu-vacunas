@@ -11,8 +11,45 @@
   </head>
   <body>
     <!-- Comienzo de menú -->
+    <div class="menu">
+      <div class="menu-item" href="#diavac">
+        <a href="#diavac"><img src="./img/diavac.png" alt="diavac" /></a>
+        <div class="submenu" style="--submenu-bg-color: #554fe9">
+          <a href="#diabetes">DIABETES</a>
+          <a href="#vacunas">VACUNAS</a>
+        </div>
+      </div>
 
-    <div class="menu"></div>
+      <div class="menu-item" onclick="gotoId('#eco')">
+        <a href="#eco"><img src="./img/eco.png" alt="diavac" /></a>
+        <div class="submenu" style="--submenu-bg-color: #00867c">
+          <a href="#especialidades" class="categoria">ESPECIALIDADES</a>
+          <a href="#abaf">ABAF</a>
+          <a href="#anestesiologia">ANESTESIOLOGÍA</a>
+          <a href="#virologia">VIROLOGÍA</a>
+          <span class="divider"></span>
+          <a href="#comercial" class="categoria">COMERCIAL</a>
+        </div>
+      </div>
+
+      <div class="menu-item" id="menu-mentoring" onclick="gotoId('#mentoring')">
+        <a href="#mentoring"><img src="./img/mentoring.png" alt="diavac" /></a>
+      </div>
+
+      <div class="menu-item" onclick="gotoId('#administracion')">
+        <a href="#administracion"
+          ><img src="./img/administracion.png" alt="administracion"
+        /></a>
+      </div>
+
+      <div class="menu-item" onclick="gotoId('#ventas')">
+        <a href="#ventas"><img src="./img/ventas.png" alt="ventas" /></a>
+      </div>
+
+      <div class="menu-item" onclick="gotoId('#becarios')">
+        <a href="#becarios"><img src="./img/becarios.png" alt="becarios" /></a>
+      </div>
+    </div>
 
     <!-- Fin de menú -->
   </body>
