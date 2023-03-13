@@ -1,7 +1,92 @@
 div.menu {
+  --menu-height: 15vh;
+  --submenu-offset: 2vh;
+  --transition-duration: 0.75s;
+  --text-color: white;
+  --font: sans-serif;
+
   width: 100%;
 
-  position: relative;
   display: flex;
   flex-direction: row;
+  max-height: var(--menu-height);
+
+  font-family: var(--font);
+}
+
+div.menu-item {
+  position: relative;
+
+  width: 100%;
+  height: var(--menu-height);
+
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+div.menu-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+div.submenu {
+  width: 100%;
+  /* height: 100%; */
+
+  max-height: 0;
+  overflow: hidden;
+
+  transition: var(--transition-duration);
+
+  position: absolute;
+  top: calc(var(--menu-height) + var(--submenu-offset));
+
+  background-color: var(--submenu-bg-color);
+  text-align: left;
+  /* z-index: 10; */
+  background-image: none;
+}
+
+div.submenu a {
+  font-size: 18px;
+
+  display: block;
+
+  text-decoration: none;
+  line-height: 1;
+  /* text-align: center; */
+
+  color: var(--text-color);
+
+  padding: 10px 15px;
+}
+
+div.submenu:hover > a:hover {
+  background-color: var(--text-color);
+  color: var(--submenu-bg-color);
+  background-image: none;
+}
+
+div.submenu a.categoria {
+  font-weight: bold;
+}
+
+/* div.submenu b {
+  color: var(--submenu-bg-color);
+  background-color: var(--text-color);
+  width: 90%;
+
+  padding-left: 10px;
+  line-height: 1;
+} */
+
+.menu-item:hover div.submenu,
+div.submenu:hover {
+  max-height: 100vh;
+}
+
+span.divider {
+  border-top: 2px solid var(--text-color);
+  display: block;
 }
