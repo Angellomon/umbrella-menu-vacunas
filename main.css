@@ -1,6 +1,6 @@
 div.menu {
-  --menu-height: 15vh;
-  --submenu-offset: 15px;
+  --menu-height: 100px;
+  --submenu-offset: 20px;
   --transition-duration: 0.75s;
   --text-color: white;
   --font: sans-serif;
