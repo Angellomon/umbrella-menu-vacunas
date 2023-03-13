@@ -87,6 +87,6 @@ div.submenu:hover {
 }
 
 span.divider {
-  border-top: 2px solid var(--text-color);
+  border-top: 1px solid var(--text-color);
   display: block;
 }
