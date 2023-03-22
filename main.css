@@ -90,3 +90,14 @@ span.divider {
   border-top: 4px solid var(--text-color);
   display: block;
 }
+
+.seccion {
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+div.container {
+  border: 1px solid red;
+  padding: 0;
+}
